@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff; /* Fehér háttér */
+    color: #003c8f; /* Kék színű szöveg */
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0; /* Finom alsó vonal */
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+    background-color: #ffffff;
+}
+
+.product-item {
+    background: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid #f1f1f1;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    padding: 15px;
+    background-color: #f7f7f7;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #003c8f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Részletes termékoldal */
+.product-detail {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.product-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.product-images img {
+    width: 32%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-images img:hover {
+    transform: scale(1.05);
+}
+
+.product-description {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.product-description h2 {
+    font-size: 2em;
+    color: #003c8f;
+    margin-bottom: 20px;
+}
+
+.about-curry {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-curry h3 {
+    color: #003c8f;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.about-curry p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: #003c8f;
+    color: white;
+    padding: 15px;
+}
